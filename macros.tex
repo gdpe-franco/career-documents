@@ -1,0 +1,123 @@
+%================================================
+% Resume Macros
+%================================================
+
+%------------------------------------------------
+% Header
+%------------------------------------------------
+
+\newcommand{\makeheader}[7]{
+\begin{center}
+    {\fontsize{23}{26}\selectfont\interbold\color{Text} #1\par}
+    {\fontsize{10}{12}\selectfont\intermedium\color{Accent} #2\par}
+    {\fontsize{8}{10}\selectfont\color{Muted}#3\par}
+    \vspace{1pt}
+    {\fontsize{8}{10}\selectfont\color{Muted}
+    #4
+    \quad|\quad
+    \href{mailto:#5}{#5}
+    \quad|\quad
+    \href{https://linkedin.com/in/#6}{linkedin.com/in/#6}
+    \quad|\quad
+    \href{https://github.com/#7}{github.com/#7}\par}
+\end{center}
+
+\vspace{5pt}
+
+}
+
+%================================================
+% Section Title
+%================================================
+\newcommand{\sectiontitle}[1]{%
+\vspace{5pt}
+
+\noindent
+{\fontsize{13.5}{16.5}\selectfont\intersemibold\color{Text} #1}
+\hspace{0.6em}
+{\color{Accent}\leaders\hrule height 0.8pt\hfill}
+
+\vspace{0pt}
+}
+
+%================================================
+% Summary
+%================================================
+
+\newcommand{\summary}[1]{
+#1
+
+\vspace{2pt}
+}
+
+%================================================
+% Job
+%================================================
+
+\newcommand{\job}[4]{%
+
+{\fontsize{11.5}{14}\selectfont\intersemibold #1}
+\hfill
+{\fontsize{8}{10}\selectfont\intermedium\color{Muted} #3}
+
+{\color{Accent} #2}
+
+\vspace{0pt}
+}
+
+%================================================
+% Job Items
+%================================================
+
+\newenvironment{jobitems}
+{
+\begin{itemize}[
+leftmargin=1.2em,
+topsep=0pt,
+itemsep=0pt,
+parsep=0pt,
+partopsep=0pt
+]
+}
+{
+\end{itemize}
+
+\vspace{1pt}
+}
+
+%================================================
+% Skill Group
+%================================================
+\newcommand{\skillgroup}[2]{%
+\noindent
+\makebox[2.75cm][l]{{\intersemibold #1}}
+{\fontsize{9.5}{12}\selectfont #2}
+
+\vspace{0.5pt}
+}
+
+%================================================
+% Education
+%================================================
+
+\newcommand{\education}[4]{%
+
+{\fontsize{10.5}{12.5}\selectfont\intersemibold #1}
+\hfill
+{\fontsize{8}{10}\selectfont\intermedium\color{Muted} #4}
+
+{\color{Accent} #2 \;•\; #3}
+
+\vspace{2pt}
+}
+
+%================================================
+% Information Row
+%================================================
+
+\newcommand{\inforow}[2]{%
+
+\makebox[2.75cm][l]{{\color{Accent} #1}}#2
+
+\vspace{1pt}
+}
