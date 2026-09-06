@@ -6,20 +6,23 @@
 % Header
 %------------------------------------------------
 
-\newcommand{\makeheader}[7]{
+\newcommand{\makeheader}[8]{
 \begin{center}
     {\fontsize{23}{26}\selectfont\interbold\color{Text} #1\par}
     {\fontsize{10}{12}\selectfont\intermedium\color{Accent} #2\par}
-    {\fontsize{8}{10}\selectfont\color{Muted}#3\par}
     \vspace{1pt}
     {\fontsize{8}{10}\selectfont\color{Muted}
+    #3
+    \quad|\quad
     #4
     \quad|\quad
-    \href{mailto:#5}{#5}
+    \href{mailto:#5}{#5}\par}
+    {\fontsize{8}{10}\selectfont\color{Muted}
+    \href{https://#6/}{#6}
     \quad|\quad
-    \href{https://linkedin.com/in/#6}{linkedin.com/in/#6}
+    \href{https://linkedin.com/in/#7}{linkedin.com/in/#7}
     \quad|\quad
-    \href{https://github.com/#7}{github.com/#7}\par}
+    \href{https://github.com/#8}{github.com/#8}\par}
 \end{center}
 
 \vspace{5pt}
