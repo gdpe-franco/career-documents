@@ -15,3 +15,7 @@
 # Operating system files
 .DS_Store
 Thumbs.db
+
+# Local working documents (kept on disk, never tracked)
+interview/
+*.tex.local
