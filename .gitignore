@@ -7,6 +7,8 @@
 *.synctex.gz
 *.xdv
 *.pdf
+!/cv.pdf
+!/cv-es.pdf
 
 # Editor files
 .vscode/
