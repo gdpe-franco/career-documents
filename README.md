@@ -14,6 +14,13 @@ latexmk -xelatex -interaction=nonstopmode -file-line-error cv.tex
 
 This creates `cv.pdf`.
 
+Compile the Spanish CV and check text extraction, reading order, page count, and links with:
+
+```bash
+latexmk -xelatex -interaction=nonstopmode -file-line-error cv-es.tex
+./scripts/check-extraction.sh
+```
+
 ## Project layout
 
 ```text
